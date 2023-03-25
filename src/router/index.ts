@@ -8,13 +8,17 @@ const routes: Array<RouteRecordRaw> = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+    path: '/svgs',
+    component: () => import('@/views/Svgs.vue')
+  },
+  {
+    path: '/circle-d3',
+    component: () => import('@/views/CircleDiagramm.vue')
+  },
+  {
+    path: '/legend-circle',
+    component: () => import('@/views/LegendCircle.vue')
+  },
 ]
 
 const router = createRouter({

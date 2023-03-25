@@ -5,13 +5,19 @@
     "strict": true,
     "jsx": "preserve",
     "moduleResolution": "node",
-    "skipLibCheck": true,
+    "skipLibCheck": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noEmitHelpers": true,
+
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "resolveJsonModule": true,
     "types": [
       "webpack-env"
     ],
